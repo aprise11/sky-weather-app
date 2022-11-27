@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  font-size: 37px;
+}
+ul {
+  list-style: none;
+  position: relative;
+  line-height: 1.6em;
+  padding-right: 8px;
+}
+footer {
+  text-align: center;
+  font-size: 85%;
+}
+.container {
+  font-family: "GFS Didot", serif;
+}
+.weather-main {
+  max-width: 390px;
+  height: 610px;
+  margin: 15px auto 10px auto;
+  padding: 18px;
+  border: 1px solid rgba(131, 126, 184, 0.3);
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color: #222831;
+  border-radius: 10px;
+}
+.date {
+  font-weight: 700;
+  font-size: 16px;
+}
+.condition {
+  font-weight: 700;
+  font-size: 16px;
+}
+.todays-temperature {
+  text-align: center;
+}
+.current-temp {
+  font-size: 6.3em;
+}
+.main-icon {
+  text-align: center;
+}
+.humidity-wind {
+  font-size: 13px;
+}
+.forecast-day {
+  text-align: center;
+}
+.weather-forecast {
+  padding-top: 40px;
+}
+.form-control {
+  background-color: #f7c978;
+}
+.forecast-temperature {
+  padding-top: 5px;
+}
