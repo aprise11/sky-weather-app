@@ -15,8 +15,112 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello world</h1>
-      <a href="#" class="btn btn-primary"></a>
+      <div class="weather-main">
+        <form>
+          <div class="row search-city">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input type="submit" class="btn btn-light w-100" value="Search" />
+            </div>
+          </div>
+        </form>
+        <div class="row city-content">
+          <div class="col-12 city-name">
+            <h1>Cape Town</h1>
+          </div>
+        </div>
+        <div class="row todays-temperature">
+          <div class="col-12">
+            <span class="current-temp" id="current-temp"> 17 </span>
+            <span class="units"
+              ><a href="#" id="degrees-celsius">°C</a>|<a
+                href="#"
+                id="degrees-fahrenheit"
+                >°F
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="row info">
+          <div class="col-6">
+            <div class="main-icon">
+              <img src="" width="" height="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li class="date">
+                <span id="current-day">Sunday </span
+                ><span id="current-hour">11</span>:<span class="current-hour"
+                  >11</span
+                >
+              </li>
+              <li class="condition" id="condition">Clear</li>
+              <li>Humidity: <span id="humidity">50</span>%</li>
+              <li>Wind: <span id="wind">0</span>km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row weather-forecast" id="forecast">
+          <div class="col">
+            <div class="forecast-preview">
+              <div class="forecast-day">Sat</div>
+              <img src="" width="" height="" />
+              <div class="forecast-temperature">
+                <span class="high">14° </span>|<span class="low"> 7°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="forecast-preview">
+              <div class="forecast-day">Sat</div>
+              <img src="" width="" height="" />
+              <div class="forecast-temperature">
+                <span class="high">14° </span>|<span class="low"> 7°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="forecast-preview">
+              <div class="forecast-day">Sat</div>
+              <img src="" width="" height="" />
+              <div class="forecast-temperature">
+                <span class="high">14° </span>|<span class="low"> 7°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="forecast-preview">
+              <div class="forecast-day">Sat</div>
+              <img src="" width="" height="" />
+              <div class="forecast-temperature">
+                <span class="high">14° </span>|<span class="low"> 7°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="forecast-preview">
+              <div class="forecast-day">Sat</div>
+              <img src="" width="" height="" />
+              <div class="forecast-temperature">
+                <span class="high">14° </span>|<span class="low"> 7°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <small
+          >This project was coded by Agneta Prise and is
+          <a href="#" target="_blank"> open-sourced on GitHub</a></small
+        >
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
