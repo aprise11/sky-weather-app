@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,12 +45,12 @@
         </div>
         <div class="row todays-temperature">
           <div class="col-12">
-            <span class="current-temp" id="current-temp"> 17 </span>
+            <span class="current-temp" id="current-temp"> 27° </span>
             <span class="units"
-              ><a href="#" id="degrees-celsius">°C</a>|<a
+              ><a href="#" id="degrees-celsius">C</a>|<a
                 href="#"
                 id="degrees-fahrenheit"
-                >°F
+                >F
               </a>
             </span>
           </div>
@@ -50,7 +58,7 @@
         <div class="row info">
           <div class="col-6">
             <div class="main-icon">
-              <img src="" width="" height="" />
+              <img src="media/sun.png" width="100px" height="" />
             </div>
           </div>
           <div class="col-6">
@@ -62,8 +70,10 @@
                 >
               </li>
               <li class="condition" id="condition">Clear</li>
-              <li>Humidity: <span id="humidity">50</span>%</li>
-              <li>Wind: <span id="wind">0</span>km/h</li>
+              <li class="humidity-wind">
+                Humidity: <span id="humidity">50</span>%
+              </li>
+              <li class="humidity-wind">Wind: <span id="wind">0</span>km/h</li>
             </ul>
           </div>
         </div>
@@ -71,7 +81,7 @@
           <div class="col">
             <div class="forecast-preview">
               <div class="forecast-day">Sat</div>
-              <img src="" width="" height="" />
+              <img src="media/partly-cloudy.png" width="" height="" />
               <div class="forecast-temperature">
                 <span class="high">14° </span>|<span class="low"> 7°</span>
               </div>
@@ -80,7 +90,7 @@
           <div class="col">
             <div class="forecast-preview">
               <div class="forecast-day">Sat</div>
-              <img src="" width="" height="" />
+              <img src="media/cloudy.png" width="" height="" />
               <div class="forecast-temperature">
                 <span class="high">14° </span>|<span class="low"> 7°</span>
               </div>
@@ -89,7 +99,7 @@
           <div class="col">
             <div class="forecast-preview">
               <div class="forecast-day">Sat</div>
-              <img src="" width="" height="" />
+              <img src="media/rainy.png" width="" height="" />
               <div class="forecast-temperature">
                 <span class="high">14° </span>|<span class="low"> 7°</span>
               </div>
@@ -98,7 +108,7 @@
           <div class="col">
             <div class="forecast-preview">
               <div class="forecast-day">Sat</div>
-              <img src="" width="" height="" />
+              <img src="media/winter.png" width="" height="" />
               <div class="forecast-temperature">
                 <span class="high">14° </span>|<span class="low"> 7°</span>
               </div>
@@ -107,7 +117,7 @@
           <div class="col">
             <div class="forecast-preview">
               <div class="forecast-day">Sat</div>
-              <img src="" width="" height="" />
+              <img src="media/sunny-rain.png" width="" height="" />
               <div class="forecast-temperature">
                 <span class="high">14° </span>|<span class="low"> 7°</span>
               </div>
