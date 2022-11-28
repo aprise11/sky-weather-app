@@ -29,6 +29,9 @@ footer {
   text-align: center;
   font-size: 85%;
 }
+li {
+  text-transform: capitalize;
+}
 .container {
   font-family: "GFS Didot", serif;
 }
@@ -68,9 +71,7 @@ footer {
 .weather-forecast {
   padding-top: 40px;
 }
-.form-control {
-  background-color: #f7c978;
-}
+
 .forecast-temperature {
   padding-top: 5px;
 }
