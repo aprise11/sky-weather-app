@@ -15,15 +15,16 @@ body {
 
 h1 {
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-size: 37px;
 }
 ul {
   list-style: none;
   position: relative;
   line-height: 1.6em;
-  padding-right: 8px;
+  padding: 0;
+  padding-top: 20px;
 }
 footer {
   text-align: center;
@@ -31,6 +32,9 @@ footer {
 }
 li:first-letter {
   text-transform: capitalize;
+}
+a {
+  text-decoration: none;
 }
 .container {
   font-family: "GFS Didot", serif;
@@ -53,14 +57,12 @@ li:first-letter {
   font-weight: 700;
   font-size: 16px;
 }
-.todays-temperature {
-  text-align: center;
-}
 .current-temp {
-  font-size: 6.3em;
+  font-size: 100px;
 }
 .main-icon {
-  text-align: center;
+  width: 160px;
+  height: 160px;
 }
 .humidity-wind {
   font-size: 13px;
@@ -69,7 +71,7 @@ li:first-letter {
   text-align: center;
 }
 .weather-forecast {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .forecast-temperature {
@@ -78,4 +80,32 @@ li:first-letter {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
+}
+.todays-temperature-container .active {
+  color: #222831;
+  cursor: default;
+}
+.fahrenheit {
+  color: #3f51b1;
+}
+.todays-temperature-container {
+  text-align: center;
+}
+.todays-temperature-container .units {
+  position: relative;
+  top: -56px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.info img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+}
+
+.btn-light {
+  background-color: #5a55ae;
+  box-shadow: rgb(0 0 0 / 20%) 0px 10px 10px 0px;
+  border: none;
 }
