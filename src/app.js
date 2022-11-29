@@ -30,6 +30,8 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#main-icon");
 
+  celsiusTemperature = response.data.temperature.current;
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   conditionElement.innerHTML = response.data.condition.description;
@@ -53,7 +55,32 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Cape Town");
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  degreesCelsius.classList.remove("active");
+  degreesFahrenheit.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  degreesCelsius.classList.add("active");
+  degreesFahrenheit.classList.remove("active");
+  let temperatureElement = document.querySelector("#current-temp");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let degreesFahrenheit = document.querySelector("#degrees-fahrenheit");
+degreesFahrenheit.addEventListener("click", displayFahrenheit);
+
+let degreesCelsius = document.querySelector("#degrees-celsius");
+degreesCelsius.addEventListener("click", displayCelsius);
+
+search("Cape Town");

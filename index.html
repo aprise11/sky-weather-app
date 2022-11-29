@@ -38,7 +38,7 @@
               />
             </div>
             <div class="col-3 p-0">
-              <input type="submit" class="btn btn-light w-100" value="Search" />
+              <input type="submit" class="btn btn-light" value="Search" />
             </div>
           </div>
         </form>
@@ -47,28 +47,25 @@
             <h1 id="city"></h1>
           </div>
         </div>
-        <div class="row todays-temperature">
-          <div class="col-12">
+        <div class="row">
+          <div class="col-12 todays-temperature-container">
             <span class="current-temp" id="current-temp"></span>
-            <span class="units"
-              ><a href="#" id="degrees-celsius">°C</a>|<a
-                href="#"
-                id="degrees-fahrenheit"
-                >°F
-              </a>
-            </span>
+            <span class="units">
+              <a href="#" id="degrees-celsius" class="active">°C</a>
+              <a href="#" id="degrees-fahrenheit" class="fahrenheit"
+                >°F</a
+              ></span
+            >
           </div>
         </div>
         <div class="row info">
           <div class="col-6">
-            <div>
-              <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                id="main-icon"
-                class="main-icon"
-                alt="Clear sky"
-              />
-            </div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
+              id="main-icon"
+              class="main-icon"
+              alt="Clear sky"
+            />
           </div>
           <div class="col-6">
             <ul>
