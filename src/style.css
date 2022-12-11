@@ -67,20 +67,7 @@ a {
 .humidity-wind {
   font-size: 13px;
 }
-.forecast-day {
-  text-align: center;
-}
-.weather-forecast {
-  padding-top: 20px;
-}
 
-.forecast-temperature {
-  padding-top: 5px;
-}
-.weather-forecast img {
-  display: block;
-  margin: 0 auto;
-}
 .todays-temperature-container .active {
   color: #222831;
   cursor: default;
@@ -108,4 +95,19 @@ a {
   background-color: #5a55ae;
   box-shadow: rgb(0 0 0 / 20%) 0px 10px 10px 0px;
   border: none;
+}
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+.weather-forecast-day {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+  padding-top: 5px;
 }
