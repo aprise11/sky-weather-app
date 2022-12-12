@@ -72,6 +72,29 @@ function displayCelsius(event) {
   let temperatureElement = document.querySelector("#current-temp");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+              <div class="weather-forecast-day">${day}</div>
+              <img src="media/partly-cloudy.png" width="35px" height="35px" />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">14° </span>
+                 | 
+                <span class="weather-forecast-temperature-min">7°</span>
+              </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -84,3 +107,5 @@ let degreesCelsius = document.querySelector("#degrees-celsius");
 degreesCelsius.addEventListener("click", displayCelsius);
 
 search("Cape Town");
+
+displayForecast();
