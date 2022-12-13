@@ -12,7 +12,6 @@ body {
     #f7c978 100%
   );
 }
-
 h1 {
   text-align: center;
   padding-top: 30px;
@@ -35,6 +34,7 @@ li:first-letter {
 }
 a {
   text-decoration: none;
+  color: #3f51b1;
 }
 .container {
   font-family: "GFS Didot", serif;
@@ -49,10 +49,7 @@ a {
   color: #222831;
   border-radius: 10px;
 }
-.date {
-  font-weight: 700;
-  font-size: 16px;
-}
+.date,
 .condition {
   font-weight: 700;
   font-size: 16px;
@@ -67,22 +64,8 @@ a {
 .humidity-wind {
   font-size: 13px;
 }
-
-.todays-temperature-container .active {
-  color: #222831;
-  cursor: default;
-}
-.fahrenheit {
-  color: #3f51b1;
-}
 .todays-temperature-container {
   text-align: center;
-}
-.todays-temperature-container .units {
-  position: relative;
-  top: -56px;
-  font-size: 18px;
-  font-weight: bolder;
 }
 .info img {
   display: block;
@@ -90,11 +73,14 @@ a {
   position: relative;
   top: -10px;
 }
-
 .btn-light {
   background-color: #5a55ae;
   box-shadow: rgb(0 0 0 / 20%) 0px 10px 10px 0px;
   border: none;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  background-color: #5955ae00;
 }
 .weather-forecast {
   margin-top: 10px;
@@ -110,4 +96,21 @@ a {
 .weather-forecast-temperature {
   font-size: 13px;
   padding-top: 5px;
+}
+.search-input {
+  box-shadow: rgb(0 0 0 / 20%) 0px 10px 10px 0px;
+}
+.todays-temperature-container .active {
+  color: #222831;
+  cursor: default;
+}
+.fahrenheit {
+  color: #3f51b1;
+}
+.todays-temperature-container .units {
+  position: relative;
+  top: -56px;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: all 150ms ease-in-out;
 }
